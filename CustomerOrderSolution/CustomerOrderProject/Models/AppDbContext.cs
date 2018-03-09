@@ -11,5 +11,6 @@ namespace CustomerOrderProject.Models
         public AppDbContext() : base () { }
         
         public DbSet<Customer> Customers { get; set; }
+        public  DbSet<Order> Orders { get; set; }
     }
 }

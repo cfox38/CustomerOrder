@@ -185,6 +185,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,9 +194,14 @@
     <Compile Include="Migrations\201803091606568_Initial.Designer.cs">
       <DependentUpon>201803091606568_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803091729427_Added Order.cs" />
+    <Compile Include="Migrations\201803091729427_Added Order.Designer.cs">
+      <DependentUpon>201803091729427_Added Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\JsonMessage.cs" />
   </ItemGroup>
@@ -254,6 +260,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -271,6 +278,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803091606568_Initial.resx">
       <DependentUpon>201803091606568_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803091729427_Added Order.resx">
+      <DependentUpon>201803091729427_Added Order.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
